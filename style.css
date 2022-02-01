@@ -1,0 +1,38 @@
+* {
+    border: none; 
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    display:flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.btn--clickhere {
+    display: flex;
+    justify-content: center;
+    border-color:aqua;
+    border-radius: 1rem;
+
+}
+
+.nav {
+    grid-area: nav
+}
+
+.name {
+    grid-area: name
+}
+
+.entire {
+    gid-template-areas: 
+    'name name name',
+    '.. nav',
+;
+}
+.btn--clickhere {
+    hover
+}
