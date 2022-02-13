@@ -6,13 +6,20 @@
 }
 /* command+/ */
 
+:root {
+    --background-color: #FFF9E5;
+    --secondary-color: #CF6464;
+    --black-color: #2B2B2B;
+
+}
+
+.entire{
+    background-color: var(--background-color);
+}
 /* need to make hamburger menu*/
 nav {
     display: none;
 }
-
- .entire {
- }
 
 .intro {
      width: 250px;
@@ -25,10 +32,17 @@ nav {
 
 .section {
    position: relative; 
-   bottom: 0;
+   top: 150px;
+   left: 40px;
+   color: white;
 }
 .section__li {
+    list-style-type: none;
+}
+
+a:link {
     text-decoration: none;
+    color: white;
 }
 
 
