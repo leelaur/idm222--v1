@@ -16,40 +16,20 @@
 .entire{
     background-color: var(--background-color);
 }
+header { 
+    display: flex; 
+    width: 100%;
+}
 /* need to make hamburger menu*/
 nav {
-    display: none;
+    /* display: none; */
+
 }
 
-.intro {
-     width: 250px;
-     display: relative; 
-     float: right;
-     position: relative;
-     right: 50px;
-     top: 50px;
+nav--list {
+    flex-direction: row nowrap;
 }
-
-.section {
-   position: relative; 
-   top: 150px;
-   left: 40px;
-   color: white;
-}
-.section__li {
-    list-style-type: none;
-}
-
-a:link {
-    text-decoration: none;
-    color: white;
-}
-
-
-img {
-    max-width: 100%;
-    padding-top: 5rem;
-    z-index: -100;
-    position: absolute;
+li { 
+    list-style-type: none; 
 }
 
