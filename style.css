@@ -65,3 +65,7 @@ header {
 a {
     text-decoration: none;
 }
+
+.about__p {
+    line-height: 2;
+}
