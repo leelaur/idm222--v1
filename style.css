@@ -7,29 +7,61 @@
 /* command+/ */
 
 :root {
-    --background-color: #FFF9E5;
-    --secondary-color: #CF6464;
+    --tan-color: #FFF9E5;
+    --red-color: #CF6464;
     --black-color: #2B2B2B;
 
 }
 
-.entire{
-    background-color: var(--background-color);
+.entire {
+    background-color: var(--tan-color);
+    margin: 4rem 5.5rem 0 5.5rem;
 }
 header { 
     display: flex; 
     width: 100%;
 }
-/* need to make hamburger menu*/
-nav {
-    /* display: none; */
 
+.header__wrapper {
+    align-items: center;
+    display: flex; 
+    justify-content: space-between;
 }
 
-nav--list {
+.header__list {
+    display: flex;
+}
+.header__list-item {
     flex-direction: row nowrap;
-}
-li { 
     list-style-type: none; 
+    padding: 0 1rem;
 }
 
+.intro__img {
+    padding-top: 50px;
+    display: block;
+   margin: auto;
+   max-width: 700px;
+}
+
+.intro__list-item {
+    list-style-type: none;
+    font-size: 30px;
+    line-height: 1.75;
+}
+
+.footer__list-item {
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-end; 
+    text-decoration: none;  
+}
+
+a {
+    text-decoration: none;
+}
