@@ -7,16 +7,17 @@
 /* command+/ */
 
 :root {
-    --tan-color: #FFF9E5;
-    --red-color: #CF6464;
-    --black-color: #2B2B2B;
+    --green: #BAFC00;
+    --white: #fff;
+    --black: #000;
 
 }
 
 .entire {
-    background-color: var(--tan-color);
-    margin: 4rem 5.5rem 0 5.5rem;
+    /* margin: 4rem 5.5rem 0 5.5rem; */
+
 }
+
 header { 
     display: flex; 
     width: 100%;
@@ -28,8 +29,14 @@ header {
     justify-content: space-between;
 }
 
+.header__name {
+    color: var(--green);
+    text-decoration: none;
+}
+
 .header__list {
     display: flex;
+    flex-direction: column;
 }
 .header__list-item {
     flex-direction: row nowrap;
@@ -38,10 +45,9 @@ header {
 }
 
 .intro__img {
-    padding-top: 50px;
-    display: block;
-   margin: auto;
-   max-width: 700px;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
 }
 
 .intro__list-item {
@@ -50,22 +56,35 @@ header {
     line-height: 1.75;
 }
 
+.intro__h2 {
+display: flex; 
+align-content: center;
+}
+
+footer {
+    background-color: #000;
+}
 .footer__list-item {
     list-style-type: none;
     padding: 0 1rem;
+    
 }
 
 .footer__list {
     display: flex;
-    flex-direction: row nowrap;
     justify-content: flex-end; 
     text-decoration: none;  
 }
 
 a {
     text-decoration: none;
+    color: var(--green);
 }
 
 .about__p {
     line-height: 2;
+}
+
+main {
+    min-height: 90vh;
 }
