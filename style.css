@@ -44,10 +44,17 @@ header {
     padding: 0 1rem;
 }
 
-.intro__img {
-    width: 100%;
+.background__img {
+   width: 100%; 
+   max-height: 100vh;
+   object-fit: cover;
     position: fixed;
-    z-index: -100;
+    z-index: -10;
+}
+
+.intro__list {
+    display:flex; 
+    align-self: flex-end;
 }
 
 .intro__list-item {
@@ -56,9 +63,9 @@ header {
     line-height: 1.75;
 }
 
-.intro__h2 {
-display: flex; 
-align-content: center;
+.intro__wrapper {
+    display: flex;
+    align-content: center;
 }
 
 footer {
