@@ -9,6 +9,7 @@
 :root {
     --green: #BAFC00;
     --white: #fff;
+    --off-black: #2B2B2B;
     --black: #000;
 }
 
@@ -83,23 +84,19 @@ body {
 
 .projects{
    padding-top: 5rem;
+   
 }
 .projects__list {
+    list-style-type: none;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-
-}
-/* .project__list-item {
-    justify-self:center;
-    justify-content: space-between;
-} */
-.project__list--img {
-    justify-self: center;
+    grid-template-columns:500px 500px;
+    grid-template-rows: 500px 500px;
+    gap: 10%;
+    background-color: red;
+    
 }
 
-.project__list--name {
-    display: grid;
-    position: absolute;
-    align-items:start;
+.projects__list--color {
+background-color: var(--off-black);
 }
+
