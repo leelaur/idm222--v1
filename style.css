@@ -40,12 +40,6 @@ header {
     height: 80%;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: auto auto;
-}
-
 .intro__list-item {
     list-style-type: none;
     font-size: 30px;
@@ -91,3 +85,23 @@ a {
 main {
     min-height: 90vh;
 }  
+
+.projects__list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+
+}
+/* .project__list-item {
+    justify-self:center;
+    justify-content: space-between;
+} */
+.project__list--img {
+    justify-self: center;
+}
+
+.project__list--name {
+    display: grid;
+    position: absolute;
+    align-items:start;
+}
