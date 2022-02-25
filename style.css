@@ -12,6 +12,12 @@
     --black: #000;
 }
 
+
+.home {
+    background-image: url('images/backgroundimg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 header { 
     display: flex; 
     width: 100%;
@@ -32,13 +38,6 @@ header {
     list-style: none;
 }
 
-.background-img {
-    width: 100%;
-    z-index: -100;
-    position: fixed;
-    object-fit: cover;
-    height: 80%;
-}
 
 .intro__list-item {
     list-style-type: none;
@@ -47,16 +46,12 @@ header {
 }
 
 .intro__wrapper {
-    display: flex;
-   flex-direction: column; 
-   width:300px;
-   height: 500px;
+    display: grid;
+   align-items: center;
+   max-width:300px;
+   height: 600px;
 }
 
-.intro__name, .intro__tag{
-    display: flex;
-    align-items: center;
-}
 
 footer {
     background-color: #000;
@@ -82,10 +77,13 @@ a {
     line-height: 2;
 }
 
-main {
+body {
     min-height: 90vh;
 }  
 
+.projects{
+   padding-top: 5rem;
+}
 .projects__list {
     display: grid;
     grid-template-columns: 50% 50%;
