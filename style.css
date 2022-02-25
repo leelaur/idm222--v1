@@ -55,7 +55,7 @@ header {
 
 
 footer {
-    background-color: #000;
+    background-color: var(--off-black);
 }
 .footer__list-item {
     list-style-type: none;
@@ -90,13 +90,14 @@ body {
     list-style-type: none;
     display: grid;
     grid-template-columns:500px 500px;
-    grid-template-rows: 500px 500px;
+    grid-template-rows: 300px 300px;
     gap: 10%;
     background-color: red;
+    justify-content: center;
+    padding: 3rem 0 5rem 0;
     
 }
 
 .projects__list--color {
 background-color: var(--off-black);
 }
-
