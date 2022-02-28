@@ -52,31 +52,6 @@
     background-repeat: no-repeat;
 }
 
-.about {
-    background-image: url('images/backgroundimg.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.collider {
-    background-image: url('images/backgroundimg.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.coolmath {
-    background-image: url('images/backgroundimg.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.mythicalwallet {
-    background-image: url('images/backgroundimg.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.gallery {
-    background-image: url('images/backgroundimg.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 header { 
     display: flex; 
     width: 100%;
@@ -130,6 +105,17 @@ header {
     height: 90vh;
 }
 } */
+
+@media screen and (min-width: 0) {
+    .space--project {
+    height: 30vh;
+}
+}
+@media screen and (min-width: 1600px) {
+    .space--project {
+    height: 55vh;
+}
+}
 
 
 footer {
@@ -202,3 +188,28 @@ body {
 .projects__list--name:hover {
     color: var(--green);
 }
+
+.background-img{
+    position: absolute;
+    z-index:-10;
+    object-fit: cover;
+    width:100%;
+}
+
+.project-title {
+    text-align: center;
+    color: var(--green);
+}
+
+.header__project {
+    text-align: center;
+}
+
+.projects-img {
+    display: flex;
+    justify-items: center;
+    object-fit: cover;
+    max-width: 70%;
+
+}
+
